@@ -1,0 +1,170 @@
+[
+	{
+		"name": "bug",
+		"color": "ee0701",
+		"aliases": [
+			"Bug"
+		]
+	},
+	{
+		"name": "cleanup",
+		"color": "fbca04",
+		"aliases": [
+			"spring cleaning",
+			"Tech Debt"
+		]
+	},
+	{
+		"name": "compatibility",
+		"color": "fad8c7",
+		"aliases": [
+			"Compatibility"
+		]
+	},
+	{
+		"name": "design",
+		"color": "fbca04",
+		"aliases": [
+			"styles",
+			"UX"
+		]
+	},
+	{
+		"name": "developer relations",
+		"color": "d4c5f9",
+		"aliases": [
+			"developer relations & evangelism"
+		]
+	},
+	{
+		"name": "discussion",
+		"color": "e99695",
+		"aliases": [
+			"Discussion"
+		]
+	},
+	{
+		"name": "documentation",
+		"color": "006b75",
+		"aliases": [
+			"Documentation"
+		]
+	},
+	{
+		"name": "duplicate",
+		"color": "cccccc"
+	},
+	{
+		"name": "enhancement",
+		"color": "84b6eb"
+	},
+	{
+		"name": "easy",
+		"color": "bfe5bf",
+		"aliases": [
+			"Easy"
+		]
+	},
+	{
+		"name": "error messages",
+		"color": "d9e07f",
+		"aliases": [
+			"error messaging",
+			"Error Messaging"
+		]
+	},
+	{
+		"name": "fixed in branch",
+		"color": "009800",
+		"aliases": [
+			"Fixed In Branch"
+		]
+	},
+	{
+		"name": "help wanted",
+		"color": "128A0C",
+		"aliases": [
+			"ready"
+		]
+	},
+	{
+		"name": "in progress",
+		"color": "ededed",
+		"aliases": [
+			"In Progress",
+			"in-progress"
+		]
+	},
+	{
+		"name": "invalid",
+		"color": "e6e6e6"
+	},
+	{
+		"name": "needs a hero",
+		"color": "000000",
+		"aliases": [
+			"Needs a hero"
+		]
+	},
+	{
+		"name": "p0",
+		"color": "b60205",
+		"aliases": [
+			"P0"
+		]
+	},
+	{
+		"name": "p1",
+		"color": "e99695",
+		"aliases": [
+			"P1"
+		]
+	},
+	{
+		"name": "p2",
+		"color": "f9d0c4",
+		"aliases": [
+			"P2"
+		]
+	},
+	{
+		"name": "p3",
+		"color": "f9d0c4",
+		"aliases": [
+			"P3"
+		]
+	},
+	{
+		"name": "p4",
+		"color": "f9d0c4",
+		"aliases": [
+			"P4"
+		]
+	},
+	{
+		"name": "regression",
+		"color": "eb6420"
+	},
+	{
+		"name": "question",
+		"color": "cc317c"
+	},
+	{
+		"name": "solved on paper",
+		"color": "bfe5bf",
+		"aliases": [
+			"Solved on paper"
+		]
+	},
+	{
+		"name": "website",
+		"color": "c7def8",
+		"aliases": [
+			"funcunit.com"
+		]
+	},
+	{
+		"name": "wontfix",
+		"color": "ffffff"
+	}
+]
