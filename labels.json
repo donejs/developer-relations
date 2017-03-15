@@ -25,6 +25,7 @@
 		"name": "design",
 		"color": "fbca04",
 		"aliases": [
+			"layout-and-style",
 			"styles",
 			"UX"
 		]
@@ -131,6 +132,7 @@
 		"name": "p3",
 		"color": "f9d0c4",
 		"aliases": [
+			"low-priority",
 			"P3"
 		]
 	},
@@ -165,6 +167,9 @@
 	},
 	{
 		"name": "wontfix",
-		"color": "ffffff"
+		"color": "ffffff",
+		"aliases": [
+			"Won't Fix"
+		]
 	}
 ]
