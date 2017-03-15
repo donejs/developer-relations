@@ -35,8 +35,10 @@ if (organizationName.includes('/')) {
       repoNames.forEach(function(repoName) {
         result = result.then(function() {
           return new Promise(function(resolve, reject) {
-            resolve(syncRepo(repoName));
+            syncRepo(repoName).then(resolve, reject);
           });
+        }, function(error) {
+          console.error('Error syncing labels:', error);
         });
       });
     }
