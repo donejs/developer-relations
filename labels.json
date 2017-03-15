@@ -63,6 +63,7 @@
 		"name": "easy",
 		"color": "bfe5bf",
 		"aliases": [
+			"Difficulty - Easy",
 			"Easy"
 		]
 	},
@@ -105,6 +106,13 @@
 		"color": "000000",
 		"aliases": [
 			"Needs a hero"
+		]
+	},
+	{
+		"name": "needs submitter response",
+		"color": "fef2c0",
+		"aliases": [
+			"need more info"
 		]
 	},
 	{
