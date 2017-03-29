@@ -24,26 +24,45 @@ if (organizationName.includes('/')) {
   /* Get a list of repositories for a given org */
   const githubClient = github.client(accessToken);
   const githubOrg = githubClient.org(organizationName);
-  githubOrg.repos(function(error, repos) {
+  const reposCallOptions = {
+    page: 1,
+    per_page: 100
+  };
+  const repoNames = [];// This will keep a list of all the repo names
+
+  function reposCallback(error, repos) {
     if (error) {
       console.error('Error retrieving repos:', error);
     } else {
-      const repoNames = repos.map(function(repo) {
-        return repo.full_name;
-      });
-      let result = Promise.resolve();
-      repoNames.forEach(function(repoName) {
-        result = result.then(function() {
-          return new Promise(function(resolve, reject) {
-            syncRepo(repoName).then(resolve, reject);
-          });
-        }, function(error) {
-          console.error('Error syncing labels:', error);
-        });
-      });
-    }
-  });
 
+      // Add all the repo names to repoNames
+      repoNames.push.apply(repoNames, repos.map(function(repo) {
+        return repo.full_name;
+      }));
+
+      // If the number of repos returned by the API is the same
+      // as our limit, then we need to fetch the next page.
+      if (repos.length === reposCallOptions.per_page) {
+        reposCallOptions.page += 1;
+        githubOrg.repos(reposCallOptions, reposCallback);
+
+      } else {// Done fetching the repo names
+        console.info(`Syncing the labels for ${repoNames.length} repositories.`);
+        let result = Promise.resolve();
+        repoNames.forEach(function(repoName) {
+          result = result.then(function() {
+            return new Promise(function(resolve, reject) {
+              syncRepo(repoName).then(resolve, reject);
+            });
+          }, function(error) {
+            console.error('Error syncing labels:', error);
+          });
+        });
+      }
+    }
+  }
+
+  githubOrg.repos(reposCallOptions, reposCallback);// First page fetch
 }
 
 function syncRepo(repo) {
