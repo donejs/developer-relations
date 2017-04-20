@@ -21,6 +21,8 @@ The [Performance Budget Calculator](http://www.performancebudget.io/) is a handy
 
 [WebPagetest](https://www.webpagetest.org/easy) is a great tool for testing website performance on real-world devices.
 
+Matthew’s [performance audit of a DoneJS website](https://github.com/stealjs/stealjs/issues/20) has some helpful commentary.
+
 # Security
 
 Enable [Synk](https://snyk.io/) on our repos to find and fix vulnerabilities in our dependencies.
