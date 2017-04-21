@@ -23,6 +23,8 @@ The [Performance Budget Calculator](http://www.performancebudget.io/) is a handy
 
 Matthew’s [performance audit of a DoneJS website](https://github.com/stealjs/stealjs/issues/20) has some helpful commentary.
 
+[Sitespeed.io](https://www.sitespeed.io/) has more useful tools, including CLI tools that could be added to a build process.
+
 # Security
 
 Enable [Synk](https://snyk.io/) on our repos to find and fix vulnerabilities in our dependencies.
