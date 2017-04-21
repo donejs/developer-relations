@@ -17,6 +17,8 @@ This checklist is a rough guide on how to check for website accessibility, perfo
 
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) is specifically made for validating parts of the [Progressive Web App Checklist](https://developers.google.com/web/progressive-web-apps/checklist), which includes various performance metrics.
 
+[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) is a tool from Google that gives suggestions for making pages faster.
+
 The [Performance Budget Calculator](http://www.performancebudget.io/) is a handy tool for calculating a performance budget for websites.
 
 [WebPagetest](https://www.webpagetest.org/easy) is a great tool for testing website performance on real-world devices.
