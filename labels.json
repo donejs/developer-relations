@@ -1,5 +1,9 @@
 [
 	{
+		"name": "accessibility",
+		"color": "1984c6"
+	},
+	{
 		"name": "bug",
 		"color": "ee0701",
 		"aliases": [
@@ -26,6 +30,7 @@
 		"name": "design",
 		"color": "fbca04",
 		"aliases": [
+			"Design",
 			"layout-and-style",
 			"styles",
 			"UX"
