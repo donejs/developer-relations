@@ -108,11 +108,15 @@ function getPullRequestsForRepos(repoNames) {
   let result = Promise.resolve();
 
   // Iterate through all the repository names one-by-one…
-  const prPromises = repoNames.map(function(repoName) {
-    // …get the pull requests for each repo…
-    return getPullRequestsForRepo(repoName);
-  });
-  Promise.all(prPromises).then(function(results) {
+  const prPromises = repoNames.reduce(function(promise, repoName) {
+    return promise.then(function(results) {
+      // …get the pull requests for each repo…
+      return getPullRequestsForRepo(repoName).then(function(result) {
+        return results.concat(result)
+      });
+    });
+  }, Promise.resolve([]));
+  prPromises.then(function(results) {
 
     // …combine the results into one array…
     const mergedPRs = results.reduce(function(a, b) {
