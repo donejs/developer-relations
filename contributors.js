@@ -5,13 +5,11 @@ const github = require('octonode');
 const coreContributors = [
   'chasenlehara',
   'cherifGsoul',
-  'daffl',
   'greenkeeperio-bot',
   'justinbmeyer',
   'kdillon',
   'matthewp',
   'phillipskevin',
-  'prashantsharmain',
   'pYr0x'
 ];
 
