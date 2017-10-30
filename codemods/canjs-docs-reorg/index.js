@@ -70,17 +70,22 @@ function updateFileContents(originalFileContents, moduleName) {
     index -= 1;
   }
 
-  const newParent = newGroups[moduleName];
-
   const entireLine = originalFileContents.substring(
     indexOfPrecedingNewline,
     indexOfNextNewline
   );
+  const collectionMatch = entireLine.match(
+    /can-core|can-ecosystem|can-infrastructure|can-legacy/
+  );
+  if (!collectionMatch || !collectionMatch[0]) {
+    return null;
+  }
+  const collectionName = collectionMatch[0];
 
   const lineWithCollection = entireLine.replace("@parent", "@collection");
 
-  const lineWithParentReplaced =
-    entireLine.substring(0, entireLine.indexOf("can-")) + newParent;
+  const newParent = newGroups[moduleName];
+  const lineWithParentReplaced = entireLine.replace(collectionName, newParent);
 
   const newFileContents = [
     originalFileContents.substring(0, indexOfPrecedingNewline),

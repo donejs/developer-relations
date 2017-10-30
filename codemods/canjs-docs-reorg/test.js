@@ -39,6 +39,10 @@ const canComponentResults = `@module {constructor} can-component can-component
 @collection can-core
 @link ../docco/component/component.html docco`;
 
+const canCidMapContents = `@module {Map} can-cid/map/map
+@parent can-typed-data
+@collection can-cid`;
+
 describe("updateFileContents function", function() {
   it("can update docs in comments", function() {
     const results = supermod.updateFileContents(canComponentContents, 'can-component');
@@ -47,5 +51,9 @@ describe("updateFileContents function", function() {
   it("can update docs in markdown", function() {
     const results = supermod.updateFileContents(canAjaxContents, 'can-ajax');
     assert.deepStrictEqual(results, canAjaxResults);
+  });
+  it("skips docs for modules that don’t have a @parent collection", function() {
+    const results = supermod.updateFileContents(canCidMapContents, 'can-cid/map/map');
+    assert.deepStrictEqual(results, null);
   });
 });
