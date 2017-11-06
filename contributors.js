@@ -7,7 +7,7 @@ const coreContributors = [
   'cherifGsoul',
   'greenkeeperio-bot',
   'justinbmeyer',
-  'kdillon',
+  // 'kdillon',
   'matthewp',
   'phillipskevin',
   'pYr0x'
