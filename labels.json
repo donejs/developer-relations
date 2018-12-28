@@ -1,11 +1,11 @@
 [
 	{
 		"name": "accessibility",
-		"color": "1984c6"
+		"color": "275091"
 	},
 	{
 		"name": "bug",
-		"color": "ee0701",
+		"color": "d73a4a",
 		"aliases": [
 			"Bug"
 		]
@@ -59,11 +59,11 @@
 	},
 	{
 		"name": "duplicate",
-		"color": "cccccc"
+		"color": "cfd3d7"
 	},
 	{
 		"name": "enhancement",
-		"color": "84b6eb"
+		"color": "a2eeef"
 	},
 	{
 		"name": "easy",
@@ -89,8 +89,12 @@
 		]
 	},
 	{
+		"name": "good first issue",
+		"color": "7057ff"
+	},
+	{
 		"name": "help wanted",
-		"color": "128A0C",
+		"color": "008672",
 		"aliases": [
 			"ready"
 		]
@@ -105,7 +109,7 @@
 	},
 	{
 		"name": "invalid",
-		"color": "e6e6e6"
+		"color": "e4e669"
 	},
 	{
 		"name": "needs a hero",
@@ -164,7 +168,7 @@
 	},
 	{
 		"name": "question",
-		"color": "cc317c"
+		"color": "d876e3"
 	},
 	{
 		"name": "solved on paper",
