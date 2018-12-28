@@ -17,7 +17,11 @@ if (!organizationName) {
 
 /* Support specifying a repository name */
 if (organizationName.includes('/')) {
-  syncRepo(organizationName);
+  syncRepo(organizationName).then(function() {
+    console.info('Finished syncing labels for: ' + organizationName);
+  }, function(error) {
+    console.error('Error syncing labels:', error);
+  });
 
 } else {
 
