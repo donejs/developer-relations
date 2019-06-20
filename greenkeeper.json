@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "codemods/canjs-docs-reorg/package.json",
+        "codemods/canjs-update-default-readmes/package.json",
+        "codemods/update-chat-forum-links/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
