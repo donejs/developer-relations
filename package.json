@@ -15,6 +15,6 @@
   "homepage": "https://github.com/donejs/developer-relations#readme",
   "devDependencies": {
     "github-label-sync": "chasenlehara/github-label-sync#4-lots-of-labels",
-    "octonode": "^0.7.10"
+    "octonode": "^0.9.5"
   }
 }
